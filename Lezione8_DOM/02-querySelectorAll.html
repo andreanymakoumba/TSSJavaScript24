@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Lista Spesa</h1>
+    <ul id="listaSpesa">
+        <li id="uno">Nutela</li>
+        <li id="due">Biscotti</li>
+        <li id="tre">Acqua</li>
+        <li id="quattro">Birra</li>
+        <li id="cinque">Orate</li>
+        <li id="sei">Insalate</li>
+    </ul>
+    
+    
+    
+    <div id="dimDiv">
+        <h2>Lista Libri</h2>
+        <ul id="listaLibri">
+            <li class="txtRed">Java8 ed Eclipes</li>
+            <li class="txtRed">Il mestiere di vivere</li>
+            <li class="txtRed">Cosi parlò Java8</li>
+            <li class="txtRed">I dolori del giovane Programmatore</li>
+            <li class="txtRed">Una vita come tante</li>
+            <li class="txtRed">Delito e java</li>
+            <li class="txtRed">il viaggio al centro di Javascript</li>
+    
+        </ul>
+    </div>
+    
+    <div>
+        <h2>Lista Film</h2>
+    <ul>
+        <li>Harry Poter e il prigioniero di JavaScript</li>
+        <li>Avengers Vs Eclipse</li>
+        <li>Java Returns</li>
+        <li>J per Jason</li>
+    </ul>
+    </div>
+
+    <script>
+
+let lis = document.querySelectorAll("li");  //NODELIST
+console.log(lis);
+
+//voglio leggere i testi dei siingoli Li
+//for(let i = 0; i < lis.length; i++){
+  //  console.log(lis[i].textContent);
+//}
+
+//i sigoli Li sono degli oggetti
+lis.forEach(li => {
+    console.log(li.textContent);
+});
+
+
+
+// voglio prendere solo i libri
+
+//let liLibri = document.querySelectorAll("#listaLibri");
+//console.log(liLibri);
+let liLibri = document.querySelectorAll("li.txtRed");
+console.log(liLibri);
+
+liLibri.forEach(li => {
+    console.log(li.textContent);
+});
+
+
+console.log(window);
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Lista Spesa</h1>
+    <ul id="listaSpesa">
+        <li id="uno">Nutela</li>
+        <li id="due">Biscotti</li>
+        <li id="tre">Acqua</li>
+        <li id="quattro">Birra</li>
+        <li id="cinque">Orate</li>
+        <li id="sei">Insalate</li>
+    </ul>
+    
+    
+    
+    <div id="dimDiv">
+        <h2>Lista Libri</h2>
+        <ul id="listaLibri">
+            <li class="txtRed">Java8 ed Eclipes</li>
+            <li class="txtRed">Il mestiere di vivere</li>
+            <li class="txtRed">Cosi parlò Java8</li>
+            <li class="txtRed">I dolori del giovane Programmatore</li>
+            <li class="txtRed">Una vita come tante</li>
+            <li class="txtRed">Delito e java</li>
+            <li class="txtRed">il viaggio al centro di Javascript</li>
+    
+        </ul>
+    </div>
+    
+    <div>
+        <h2>Lista Film</h2>
+    <ul>
+        <li>Harry Poter e il prigioniero di JavaScript</li>
+        <li>Avengers Vs Eclipse</li>
+        <li>Java Returns</li>
+        <li>J per Jason</li>
+    </ul>
+    </div>
+    <div class="container">
+<h2>Immaginazione e lavoro</h2>
+<a href="https://wwww.immaginazioneelavoro.it" class=""></a>
+    </div>
+
+    <div class="container-fluid">
+        <h2>link Github</h2>
+        <a href="https://www.github.com" class="txtRed bgGreen">Github</a>
+    </div>
+
+    <script>
+
+let liFilm = document.querySelectorAll("#listaFilm li");
+//per ogni li della lista setto l'attributo class
+liFilm.forEach (li => {
+    li.setAttribute("class", "txtBlue");
+})
+
+//inserisco un link alla pagina nel div.container
+
+let a = document.querySelectorAll(".container a");
+a.setAttribute("href", "https://www.immaginazioneelavoro.it");
+a.textContent = "Immaginazione e lavoro";
+
+
+    </script>
+
+
+</body>
+</html>
