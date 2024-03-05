@@ -1,0 +1,8 @@
+#menu li{
+    float: left;
+    width: 3em;
+    margin: 0 0.5em 0 0;
+    padding: 0;
+    border-right: 1px solid #000; 
+    text-align: center;
+}
